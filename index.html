@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Loan Tracker</title>
+
+    <link rel="stylesheet" href="my-library/css/library.css">
+    <script src="my-library/js/library.js" defer></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>Library Loan Tracker</h1>
+        <p>Keep track of books lent to borrowers.</p>
+    </header>
+
+    
+<main class="container">
+
+    <!-- Add New Loan Form -->
+    <section class="card">
+
+        <h2>Add a New Loan</h2>
+
+        <form id="loanForm">
+
+            <div class="form-grid">
+
+                <div class="form-group">
+                    <label for="title">Book Title</label>
+                    <input
+                        type="text"
+                        id="title"
+                        placeholder="Enter book title"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="author">Author</label>
+                    <input
+                        type="text"
+                        id="author"
+                        placeholder="Enter author"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="borrower">Borrower</label>
+                    <input
+                        type="text"
+                        id="borrower"
+                        placeholder="Enter borrower name"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="dueDate">Due Date</label>
+                    <input
+                        type="date"
+                        id="dueDate"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="genre">Genre</label>
+                    <input
+                        type="text"
+                        id="genre"
+                        placeholder="Enter book genre"
+                        required
+                    >
+                </div>
+
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+                Add Loan
+            </button>
+
+        </form>
+
+    </section>
+
+</main>
+
+
+    <footer class="footer">
+        <p>Library Loan Tracker</p>
+    </footer>
+
+</body>
+</html>
