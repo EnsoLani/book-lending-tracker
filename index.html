@@ -20,75 +20,89 @@
     
 <main class="container">
 
-    <!-- Add New Loan Form -->
-    <section class="card">
+<section class="card">
 
-        <h2>Add a New Loan</h2>
+            <h2>Add a New Loan</h2>
 
-        <form id="loanForm">
+            <form id="loanForm">
 
-            <div class="form-grid">
+                <div class="form-grid">
 
-                <div class="form-group">
-                    <label for="title">Book Title</label>
-                    <input
-                        type="text"
-                        id="title"
-                        placeholder="Enter book title"
-                        required
-                    >
+                    <div class="form-group">
+                        <label for="title">Book Title</label>
+                        <input type="text" id="title"
+                               placeholder="Enter book title" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="author">Author</label>
+                        <input type="text" id="author"
+                               placeholder="Enter author" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="borrower">Borrower</label>
+                        <input type="text" id="borrower"
+                               placeholder="Enter borrower name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dueDate">Due Date</label>
+                        <input type="date" id="dueDate" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="genre">Genre</label>
+                        <input type="text" id="genre"
+                               placeholder="Enter genre" required>
+                    </div>
+
                 </div>
 
-                <div class="form-group">
-                    <label for="author">Author</label>
-                    <input
-                        type="text"
-                        id="author"
-                        placeholder="Enter author"
-                        required
-                    >
-                </div>
+                <button type="submit" class="btn btn-primary">
+                    Add Loan
+                </button>
 
-                <div class="form-group">
-                    <label for="borrower">Borrower</label>
-                    <input
-                        type="text"
-                        id="borrower"
-                        placeholder="Enter borrower name"
-                        required
-                    >
-                </div>
+            </form>
 
-                <div class="form-group">
-                    <label for="dueDate">Due Date</label>
-                    <input
-                        type="date"
-                        id="dueDate"
-                        required
-                    >
-                </div>
+        </section>
 
-                <div class="form-group">
-                    <label for="genre">Genre</label>
-                    <input
-                        type="text"
-                        id="genre"
-                        placeholder="Enter book genre"
-                        required
-                    >
-                </div>
+        <!-- Loans Table -->
+        <section class="card">
+
+            <h2>Current Loans</h2>
+
+            <div class="table-container">
+
+                <table class="loan-table">
+
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Author</th>
+                            <th>Borrower</th>
+                            <th>Due Date</th>
+                            <th>Genre</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="loanTableBody">
+                        <!-- Loans added using JavaScript -->
+                    </tbody>
+
+                </table>
 
             </div>
 
-            <button type="submit" class="btn btn-primary">
-                Add Loan
-            </button>
+            <p id="emptyMessage" class="empty-message">
+                No books have been lent yet.
+            </p>
 
-        </form>
+        </section>
 
-    </section>
-
-</main>
+    </main>
 
 
     <footer class="footer">
